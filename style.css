@@ -1,0 +1,8 @@
+span.popupIssue {
+  cursor: pointer;
+}
+
+span.popupIssue:hover {
+  top: -5px;
+}
+/*# sourceMappingURL=style.css.map */

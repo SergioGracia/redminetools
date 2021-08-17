@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "author" : "sergio@tappx.com",
+  "name": "Redmine Tools",
+  "version": "0.1.0",
+  "description": "Visual hacks and toys for better redmine experience",
+  "permissions" : ["activetab", "declarativeContent"],
+  "content_scripts": [{
+    "css": ["style.css"],
+    "js": ["jquery.min.js","content.js"],
+    "matches": [
+      "<all_urls>"
+  ],
+  "include_globs": [
+      "*redmine*"
+  ]
+
+  }]
+ 
+}
