@@ -3,6 +3,31 @@ span.popupIssue {
 }
 
 span.popupIssue:hover {
-  top: -5px;
+  border: 1px solid black;
+}
+
+td.issue-status-col div.issue-card {
+  border-radius: 3px;
+  box-shadow: 1px -1px 5px 4px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: 1px -1px 5px 4px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 1px -1px 5px 4px rgba(0, 0, 0, 0.09);
+  font-size: 13px;
+  letter-spacing: -0.6px;
+}
+
+td.issue-status-col[data-id="1"] div.issue-card {
+  background-color: #ffdbdb;
+}
+
+td.issue-status-col[data-id="2"] div.issue-card {
+  background-color: #fff2db;
+}
+
+td.issue-status-col[data-id="4"] div.issue-card {
+  background-color: #dbe5ff !important;
+}
+
+td.issue-status-col[data-id="5"] div.issue-card {
+  background-color: #e5ffdb !important;
 }
 /*# sourceMappingURL=style.css.map */

@@ -2,6 +2,50 @@ span.popupIssue{
   cursor:pointer;
 
   &:hover{
-    top:-5px;
+    border:1px solid black;
   }
+}
+
+td.issue-status-col{
+
+  div.issue-card{
+    border-radius:3px;
+    box-shadow: 1px -1px 5px 4px rgba(0,0,0,0.09);
+    -webkit-box-shadow: 1px -1px 5px 4px rgba(0,0,0,0.09);
+    -moz-box-shadow: 1px -1px 5px 4px rgba(0,0,0,0.09);
+    font-size: 13px;
+    letter-spacing: -0.6px;
+  }
+
+  &[data-id="1"]
+  {
+    div.issue-card{
+      background-color:rgb(255, 219, 219);
+    }
+  }
+
+  &[data-id="2"]
+  {
+    div.issue-card{
+      background-color:rgb(255, 242, 219);
+    }
+  }
+
+  &[data-id="4"]
+  {
+    div.issue-card{
+      background-color:rgb(219, 229, 255) !important;
+    }
+  }
+
+  &[data-id="5"]
+  {
+    div.issue-card{
+      background-color:rgb(229, 255, 219) !important;
+    }
+  }
+  
+  
+  
+  
 }
