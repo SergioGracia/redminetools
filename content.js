@@ -29,5 +29,42 @@ $(document).ready(() => {
     popup(url)
   })
 
-  
+  // Adds pictos to show priority on issues
+  $('table.issues tr.issue').each((i, item) => {
+    if ($(item).hasClass('priority-1')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🔵 ')
+    }
+
+    if ($(item).hasClass('priority-2')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🟢 ')
+    }
+
+    if ($(item).hasClass('priority-3')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🟡 ')
+    }
+
+    if ($(item).hasClass('priority-4')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🟠 ')
+    }
+
+    if ($(item).hasClass('priority-5')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🔴 ')
+    }
+  })
+
+  // Ads pictos to some statuses
+  $('table.issues tr.issue').each((i, item) => {
+    if ($(item).hasClass('status-5')) {
+      const col_priority = $(item).children('.status')
+      $(col_priority).prepend(' ✔ ')
+    } else {
+      const col_priority = $(item).children('.status')
+      $(col_priority).prepend(' ⬜ ')
+    }
+  })
 })
