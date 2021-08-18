@@ -1,20 +1,26 @@
 {
   "manifest_version": 3,
-  "author" : "sergio@tappx.com",
+  "author": "Sergio Gracia",
   "name": "Redmine Tools",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
   "description": "Visual hacks and toys for better redmine experience",
-  "permissions" : ["activetab", "declarativeContent"],
+  "permissions": ["activetab", "declarativeContent"],
   "content_scripts": [{
     "css": ["style.css"],
-    "js": ["jquery.min.js","content.js"],
+    "js": ["jquery.min.js", "content.js"],
     "matches": [
       "<all_urls>"
-  ],
-  "include_globs": [
+    ],
+    "include_globs": [
       "*redmine*"
-  ]
+    ]
+   
 
   }]
- 
+
 }
