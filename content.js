@@ -28,4 +28,6 @@ $(document).ready(() => {
     const url = item.target.attributes.linko.value
     popup(url)
   })
+
+  
 })
