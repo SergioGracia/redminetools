@@ -7,20 +7,20 @@ const popup = url => {
 $(document).ready(() => {
   // Adds 🔍 on list issues
   $('table.issues tr.issue td.subject a').each((i, item) => {
-    const url = $(item).attr('href')
+    const url = $(item).attr('href') + '?tab=history'
     $(item).parent().prepend("<span class='popupIssue' linko=" + url + '> 🔍 </span>')
   })
 
   // Adds 🔍 on agile board cards
   $(' div.issue-card span.fields p.issue-id strong').each((i, item) => {
-    const url = $(item).parent().siblings('p.name').children('a').attr('href')
+    const url = $(item).parent().siblings('p.name').children('a').attr('href') + '?tab=history'
 
     $(item).prepend("<span class='popupIssue' linko=" + url + '> 🔍 </span>')
   })
 
   // Adds 🔍 to rows on time entries
   $('table.time-entries td.issue a').each((i, item) => {
-    const url = $(item).attr('href')
+    const url = $(item).attr('href') + '?tab=history'
     $(item).parent().prepend("<span class='popupIssue' linko=" + url + '> 🔍 </span>')
   })
 
