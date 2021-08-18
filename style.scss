@@ -21,13 +21,24 @@ table.list.issues{
   font-size: 13px;
   letter-spacing: -0.6px;
   tr{
+    td{
+      &.priority{
+        text-align:left;
+        
+      }
+
+      &.status{
+        text-align:left;
+        
+      }
+    }
     &.issue{
 
       &.assigned-to-me{
-       td{
+      //  td{
          
-         font-weight:bold;
-       }
+      //    font-weight:bold;
+      //  }
       }
 
       //Status

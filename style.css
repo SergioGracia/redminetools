@@ -16,8 +16,12 @@ table.list.issues {
   letter-spacing: -0.6px;
 }
 
-table.list.issues tr.issue.assigned-to-me td {
-  font-weight: bold;
+table.list.issues tr td.priority {
+  text-align: left;
+}
+
+table.list.issues tr td.status {
+  text-align: left;
 }
 
 table.list.issues tr.issue.status-1 {

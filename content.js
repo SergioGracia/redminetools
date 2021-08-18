@@ -56,4 +56,15 @@ $(document).ready(() => {
       $(col_priority).prepend(' 🔴 ')
     }
   })
+
+  // Ads pictos to some statuses
+  $('table.issues tr.issue').each((i, item) => {
+    if ($(item).hasClass('status-5')) {
+      const col_priority = $(item).children('.status')
+      $(col_priority).prepend(' ✔ ')
+    } else {
+      const col_priority = $(item).children('.status')
+      $(col_priority).prepend(' ⬜ ')
+    }
+  })
 })
