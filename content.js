@@ -28,4 +28,32 @@ $(document).ready(() => {
     const url = item.target.attributes.linko.value
     popup(url)
   })
+
+  // Adds pictos to show priority on issues
+  $('table.issues tr.issue').each((i, item) => {
+    if ($(item).hasClass('priority-1')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🔵 ')
+    }
+
+    if ($(item).hasClass('priority-2')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🟢 ')
+    }
+
+    if ($(item).hasClass('priority-3')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🟡 ')
+    }
+
+    if ($(item).hasClass('priority-4')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🟠 ')
+    }
+
+    if ($(item).hasClass('priority-5')) {
+      const col_priority = $(item).children('.priority')
+      $(col_priority).prepend(' 🔴 ')
+    }
+  })
 })
