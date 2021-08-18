@@ -1,9 +1,43 @@
-span.popupIssue {
-  cursor: pointer;
+div#sidebar {
+  display: none;
 }
 
-span.popupIssue:hover {
-  border: 1px solid black;
+span.popupIssue {
+  cursor: pointer;
+  z-index: 999;
+}
+
+table.list.issues {
+  border-radius: 5px;
+  box-shadow: 1px -1px 5px 4px rgba(0, 0, 0, 0.09);
+  -webkit-box-shadow: 1px -1px 5px 4px rgba(0, 0, 0, 0.09);
+  -moz-box-shadow: 1px -1px 5px 4px rgba(0, 0, 0, 0.09);
+  font-size: 13px;
+  letter-spacing: -0.6px;
+}
+
+table.list.issues tr.issue.assigned-to-me td {
+  font-weight: bold;
+}
+
+table.list.issues tr.issue.status-1 {
+  background-color: #ffdbdb;
+}
+
+table.list.issues tr.issue.status-2 {
+  background-color: #fff2db;
+}
+
+table.list.issues tr.issue.status-3 {
+  background-color: #dbe5ff !important;
+}
+
+table.list.issues tr.issue.status-4 {
+  background-color: #dbe5ff !important;
+}
+
+table.list.issues tr.issue.status-5 {
+  background-color: #e5ffdb !important;
 }
 
 td.issue-status-col div.issue-card {
