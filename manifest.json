@@ -9,7 +9,7 @@
     "128": "icon128.png"
   },
   "description": "Visual hacks and toys for better redmine experience",
-  "permissions": ["activeTab", "declarativeContent"],
+  "permissions": ["activeTab"],
   "content_scripts": [{
     "css": ["style.css"],
     "js": ["jquery.min.js", "content.js"],
