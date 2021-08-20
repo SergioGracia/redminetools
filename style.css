@@ -7,6 +7,29 @@ span.popupIssue {
   z-index: 999;
 }
 
+.popupWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  position: fixed;
+}
+
+.popupWrapper div.popupIssue {
+  width: 80vw;
+  height: 80vh;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 100px;
+  border-radius: 5px;
+  border: 1px solid black;
+  overflow-y: scroll;
+}
+
+.popupWrapper div.popupIssue #top-menu, .popupWrapper div.popupIssue #header {
+  display: none;
+}
+
 table.list.issues {
   border-radius: 5px;
   box-shadow: 1px -1px 5px 4px rgba(0, 0, 0, 0.09);
