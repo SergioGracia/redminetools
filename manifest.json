@@ -1,15 +1,15 @@
 {
   "manifest_version": 3,
   "author": "Sergio Gracia",
+  
   "name": "Redmine Tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "icons": {
     "16": "icon16.png",
     "48": "icon48.png",
     "128": "icon128.png"
   },
   "description": "Visual hacks and toys for better redmine experience",
-  "permissions": ["activeTab"],
   "content_scripts": [{
     "css": ["style.css"],
     "js": ["jquery.min.js", "content.js"],

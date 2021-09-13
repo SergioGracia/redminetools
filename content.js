@@ -10,16 +10,30 @@ const popup2 = url => {
   xmlHttp.open('GET', url, false) // false for synchronous request
   xmlHttp.send(null)
 
-  const popup = '<div class="popupWrapper"><div class="popupIssue">  ' + xmlHttp.responseText + '   </div></div>'
+  const popup = '<div class="popupWrapper" id="popupWrapper"><div class="popupIssue">  ' + xmlHttp.responseText + '   </div></div>'
 
-  console.log($(xmlHttp.responseText).html())
+  // console.log($(xmlHttp.responseText).html())
 
   $(popup).prependTo('body')
+}
+
+const escFunction = e => {
+  if (e.keyCode === 27) {
+    const elem = document.getElementById('popupWrapper')
+    if (elem.parentNode) {
+      $(elem).fadeOut('fast', () => {
+        elem.parentNode.removeChild(elem)
+      })
+    }
+  }
 }
 
 /// On DOM ready
 $(document).ready(() => {
   // popup2('/issue/1934')
+
+  // ESC handler to close popup if opened
+  document.addEventListener('keydown', escFunction, false)
 
   // Adds 🔍 on list issues
   $('table.issues tr.issue td.subject a').each((i, item) => {
