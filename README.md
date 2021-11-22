@@ -10,3 +10,5 @@ Extension de chrome para habilitar nuevas opciones en el redmine
 ## v1.0.0
 - Añadido botón para popups tasks en la vista genérica de issues
 
+teeest
+
